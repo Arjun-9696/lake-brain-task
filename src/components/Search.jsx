@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { SearchIcon } from '@chakra-ui/icons'
-import { Stack, InputGroup, Input, InputRightElement, Box, Card, CardBody, Text, useDisclosure } from '@chakra-ui/react'
-import "./search.css"
+import { Stack, InputGroup, Input, InputRightElement, Box, useDisclosure } from '@chakra-ui/react'
 import axios from 'axios'
 import WeatherPopUp from './WeatherPopUp'
 const Search = () => {
@@ -14,7 +13,7 @@ const Search = () => {
     const handleSearch = (text) => {
         setSearchText(text)
     }
-    
+
     const handleQuery = async () => {
         let APIkey = "840de593b7028de6e424162454790fe5"
         try {
